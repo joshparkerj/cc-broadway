@@ -101,7 +101,8 @@ GEM
     duktape (2.6.0.0)
     erubi (1.10.0)
     execjs (2.8.1)
-    ffi (1.15.5-x64-mingw-ucrt)
+    ffi (1.15.5)
+    ffi (1.15.5-x64-unknown)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -138,10 +139,13 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.3-x64-mingw-ucrt)
+    nokogiri (1.13.3-x64-unknown)
+      racc (~> 1.4)
+    nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
     public_suffix (4.0.6)
-    puma (3.12.6)
+    puma (4.3.11)
+      nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -226,7 +230,8 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
-  x64-mingw-ucrt
+  x64-unknown
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
@@ -236,7 +241,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   duktape
   jbuilder (~> 2.5)
-  puma (~> 3.11)
+  puma (~> 4.3)
   rails (~> 7.0.2.2)
   sass-rails (~> 5.0)
   selenium-webdriver
